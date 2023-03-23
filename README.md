@@ -2,15 +2,15 @@
 Web appliaction used for viewing your Spotify statistics
 ## ✨Features
 Check your top:
-* Artists
+* 🧑🏽‍🎤Artists
   * 4 weeks
   * 6 months
   * All-time
-* Tracks
+* 🎵Tracks
   * 4 weeks
   * 6 months
   * All-time
-* Albums
+* 💽Albums
   * 4 weeks
   * 6 months
   * All-time
