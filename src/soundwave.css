@@ -1,0 +1,46 @@
+.sound-wave {
+    width: auto;
+    height: 2px;
+    margin-right: 0.15em;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0.6);
+    background-color: black;
+    color: white;
+}
+
+.bar {
+    display: block;
+    width: 10px;
+    margin-right: 1px;
+    height: 90px;
+    background: #1DB954;
+    animation: sound 0ms -800ms linear infinite alternate;
+    transition: height 1s;
+}
+
+@keyframes sound {
+    0% {
+        height: 6px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 40px;
+    }
+}
+
+.bar:nth-child(1) {
+    height: 2px;
+    animation-duration: 0.5s;
+}
+
+.bar:nth-child(2) {
+    height: 10px;
+    animation-duration: 0.3s;
+}
+
+.bar:nth-child(3) {
+    height: 18px;
+    animation-duration: 0.4s;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <meta name="description"
+    content="Get insights into your spotify listening habits! View your spotify track, artist, album and genre ranking and compare them to your last visit." />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Statistics for Spotify - Best personal Spotify stats viewer!</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3445724136721979"
+    crossorigin="anonymous"></script>
+  <script src="https://ads.holid.io/auto/spotiapp.com/holid.js" defer="defer"></script>
+</head>
+<style>
+  #root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+</style>
+
+
+<body>
+  <div class="welcome">
+    <h1>Spotify Statistics App</h1>
+    <p>Spotiapp is an web application for viewing you personal Spotify data like most played
+      artists and track, recently played tracks and a realtime spotify player!</p>
+    <a href="#privacy" class="linkto">Privacy policy</a>
+  </div>
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <div class="welcome" id="privacy">
+    <p style="font-size: 1.5em;">Privacy notice</p>
+    <p style="font-size: 0.7em;">Spotiapp does not store any of your data, it only uses the Spotify API to get your
+      data.
+      Spotiapp does not have access to your Spotify account, it only uses the Spotify API to get your data.</p>
+    <p>Personal data (usually referred to just as "data" below) will only be processed by us to the extent necessary and
+      for the purpose of providing a functional and user-friendly website, including its contents, and the services
+      offered there.
+
+      Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to
+      as the "GDPR"), "processing" refers to any operation or set of operations such as collection, recording,
+      organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by
+      transmission, dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or
+      destruction performed on personal data, whether by automated means or not.
+
+      The following privacy policy is intended to inform you in particular about the type, scope, purpose, duration, and
+      legal basis for the processing of such data either under our own control or in conjunction with others. We also
+      inform you below about the third-party components we use to optimize our website and improve the user experience
+      which may result in said third parties also processing data they collect and control.</p>
+    <p style="font-size:1.5em">Third-Party Ad Servers and Networks</p>
+    <p>We may use third-party advertising companies to serve ads when you visit the Site. These companies may use
+      information about your visits to this Site and other Web sites in order to provide advertisements about goods and
+      services of interest to you. These advertisements may appear on this Site and on other Web sites. These companies
+      may employ cookies, clear GIFs and other tracking technologies to cause relevant ads to be displayed to you. </p>
+  </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgBA0lh48hyy7RH9bn2Vgdf1gEDjZ_w1I",
+      authDomain: "spotifyapp-d5660.firebaseapp.com",
+      projectId: "spotifyapp-d5660",
+      storageBucket: "spotifyapp-d5660.appspot.com",
+      messagingSenderId: "974898457297",
+      appId: "1:974898457297:web:229a8d09d0f83ba5c973f0",
+      measurementId: "G-SDHF3JFDQT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+<footer>
+  <p>© Created by <a href="https://github.com/romprin019">Roman Princ</a></p>
+</footer>
+
+</html>
