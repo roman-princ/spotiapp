@@ -24,7 +24,7 @@ For example:
 * Key
 * Time signature
 * Mode
-## Installation
+## ⚙️Installation
 * Clone the repo to your local machine
 * Locate the directory and ```cd``` in the folder
 * Run ```npm install``` for node-modules
