@@ -17,13 +17,13 @@ Check your top:
 * Recently played tracks
 Search a track / artist / album and gather some information about it.
 For example:
-* BPM
-* Acousticness
-* Danceability
-* Duration
-* Key
-* Time signature
-* Mode
+ * BPM
+ * Acousticness
+ * Danceability
+ * Duration
+ * Key
+ * Time signature
+ * Mode
 ## ⚙️Installation
 * Clone the repo to your local machine
 * Locate the directory and ```cd``` in the folder
